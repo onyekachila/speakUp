@@ -183,10 +183,21 @@
     <Compile Include="Migrations\201905301526133_InitialModel.Designer.cs">
       <DependentUpon>201905301526133_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905301624253_CreatedEventTable.cs" />
+    <Compile Include="Migrations\201905301624253_CreatedEventTable.Designer.cs">
+      <DependentUpon>201905301624253_CreatedEventTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905301631449_AddedDataAnnotation.cs" />
+    <Compile Include="Migrations\201905301631449_AddedDataAnnotation.Designer.cs">
+      <DependentUpon>201905301631449_AddedDataAnnotation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Talk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -266,6 +277,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201905301526133_InitialModel.resx">
       <DependentUpon>201905301526133_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905301624253_CreatedEventTable.resx">
+      <DependentUpon>201905301624253_CreatedEventTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905301631449_AddedDataAnnotation.resx">
+      <DependentUpon>201905301631449_AddedDataAnnotation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
