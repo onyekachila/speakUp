@@ -10,7 +10,7 @@ namespace SpeakUp.Models
         [Required]
         public ApplicationUser  Speaker { get; set; }
         public DateTime DateTime { get; set; }
-        public string String { get; set; }
+        
 
         [Required]
         [StringLength(255)]
